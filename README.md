@@ -1,7 +1,6 @@
 # FREEBOT (Frugal Robot Engineered from Efficient and Budget Optimised Technology)
 Easy to build robot.
 
-![Circuit diagram]("https://github.com/sastejugaad/FREEBOT/blob/main/Circuit_diagram.png")
 <img src="https://github.com/sastejugaad/FREEBOT/blob/main/Circuit_diagram.png" width="50%" height="50%">
 
 # SOCIAL
