@@ -18,7 +18,7 @@ int in4=33; // The pin number for the second input of the right motor driver
 int enb=32; // The pin number for the enable pin of the right motor driver
 
 int DataIndex; // A variable to store the index of the data field
-int Speed = 0; // A variable to store the speed value
+int Speed = 50; // A variable to store the speed value
 int Right_speed = 0; // A variable to store the right motor speed value
 int Left_speed = 0; // A variable to store the left motor speed value
 
@@ -45,10 +45,10 @@ void setup() {
   if(udp.listen(udpPort)) { // Start listening on the UDP port
     Serial.print("UDP Listening on IP: "); // Print a message on the serial monitor
     Serial.println(WiFi.localIP()); // Print the IP address of the device on the serial monitor
-    udp.onPacket( { // Define a callback function to handle incoming UDP packets
+    udp.onPacket( [](AsyncUDPPacket packet) { // Define a callback function to handle incoming UDP packets
       // Print the received packet data for verification
-      Serial.print("Received Data: "); // Print a message on the serial monitor
-      Serial.println((char*)packet.data()); // Print the packet data as a string on the serial monitor
+      //Serial.print("Received Data"); // Print a message on the serial monitor
+      //Serial.println((char*)packet.data()); // Print the packet data as a string on the serial monitor
       // Parse the CSV data into separate command arrays
       String IncomingData = (char*)packet.data(); // Convert the packet data to a string and store it in a variable
       dataParser.parseData(IncomingData, ',');//Pass data and deliminator 
