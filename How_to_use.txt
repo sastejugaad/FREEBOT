@@ -1,5 +1,7 @@
-How to add esp32 to  Arduino
+How to use L298N motor driver
+https://www.youtube.com/watch?v=dyjo_ggEtVU&ab_channel=DroneBotWorkshop
 
+How to add esp32 to  Arduino
 https://www.youtube.com/watch?v=mBaS3YnqDaU&ab_channel=RuiSantos
 
 Open your Arduino IDE, go to File > Preferences
