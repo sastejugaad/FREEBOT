@@ -1,1 +1,14 @@
-I am writing a manual will update this  in two days.
+How to add esp32 to  Arduino
+
+https://www.youtube.com/watch?v=mBaS3YnqDaU&ab_channel=RuiSantos
+
+Open your Arduino IDE, go to File > Preferences
+Enter the following URL into the “Additional Board Manager URLs” field: https://dl.espressif.com/dl/package_esp32_index.json
+Click the “OK” button
+Go to Tools > Board > Boards Manager
+Search for ESP32 and press the install button for the “ESP32 by Espressif Systems”
+Wait a few seconds until the installation is complete
+Select your ESP32 board from Tools > Board menu
+Connect your ESP32 board to your computer via a USB cable
+Select the port from Tools > Port menu
+You’re ready to program your ESP32 board with Arduino IDE
