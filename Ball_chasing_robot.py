@@ -73,7 +73,7 @@ def show_live_camera_feed():
     """Function to display live camera feed, detect green ball, and control the robot."""
     global robot_speed, lower_green, upper_green, trail_buffer  # Declare global variables
     
-    cap = cv2.VideoCapture(0)  # Open the camera (use 0 for webcam)
+    cap = cv2.VideoCapture(url)  # Open the camera (use 0 for webcam)
 
     # Check if the camera is opened successfully
     if not cap.isOpened():
